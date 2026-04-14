@@ -16,9 +16,33 @@ dev = [
     "pytest==8.3.4",
 ]
 
+[dependency-groups]
+dev = [
+    "black==25.1.0",
+    "flake8==7.1.1",
+    "isort==8.0.1",
+    "mypy==1.14.1",
+    "pre-commit==4.1.0",
+    "pytest==8.3.4",
+]
+
 [build-system]
-requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["pdm-backend>=2.4.0", "uv-build>=0.8.8"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = false
+use_uv = true
+lock.format = "pdm"
+
+[tool.pdm.resolution]
+respect-source-order = true
+
+[tool.uv]
+default-groups = ["dev"]
+
+[tool.uv.workspace]
+members = ["."]
 
 [tool.black]
 line-length = 88

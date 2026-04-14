@@ -16,3 +16,8 @@ build/
 *.tmp
 **/.pytest_cache/
 **/.mypy_cache/
+.xdg-cache/
+.xdg-state/
+.pdm-python
+.pdm-home/
+__pypackages__/
