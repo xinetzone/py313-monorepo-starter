@@ -1,0 +1,11 @@
+- [x] 审计命令已执行并保留输出证据。
+- [x] `requirements.txt` 已备份到 `docs/backups/`。
+- [x] `requirements.txt` 已删除。
+- [x] `.github/workflows/python313-ci.yml` 已切换至 `pyproject.toml` 安装入口。
+- [x] `Dockerfile` 已移除 `requirements.txt` 的 `COPY` 与安装逻辑。
+- [x] `README.md` 已移除 `pip install -r requirements.txt` 示例。
+- [x] `docs/CI_CD_SPEC.md` 已更新单一依赖源说明。
+- [x] 缓存目录清理完成。
+- [x] `black/isort/flake8/mypy/pytest` 执行通过。
+- [x] 已尝试 `git push` 并在阻塞时落库证据。
+- [x] `tasks.md`、`checklist.md`、`docs/EVIDENCE_LOG.md` 已同步更新。

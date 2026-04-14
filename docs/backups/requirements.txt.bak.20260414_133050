@@ -1,0 +1,10 @@
+# Runtime dependencies
+# (Keep empty for now if no runtime third-party package is required.)
+
+# Development quality gates (Task2)
+black==25.1.0
+isort==8.0.1
+flake8==7.1.1
+mypy==1.14.1
+pre-commit==4.1.0
+pytest==8.3.4

@@ -1,0 +1,36 @@
+[project]
+name = "py313-monorepo-starter"
+version = "0.1.0"
+description = "Python 3.13+ monorepo starter repository."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "black==25.1.0",
+    "flake8==7.1.1",
+    "isort==8.0.1",
+    "mypy==1.14.1",
+    "pre-commit==4.1.0",
+    "pytest==8.3.4",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ["py313"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+py_version = 313
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+warn_unused_configs = true
+files = ["src", "tests"]

@@ -1,0 +1,10 @@
+services:
+  py313-monorepo-starter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: py313-monorepo-starter:py313
+    working_dir: /app
+    ports:
+      - "8000:8000"
+    restart: unless-stopped

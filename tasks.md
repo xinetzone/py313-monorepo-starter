@@ -1,0 +1,9 @@
+- [x] Task6 审计 `requirements.txt` 引用并完成备份（`docs/backups/requirements.txt.bak.20260414_133050`）。
+- [x] Task6 删除仓库根目录 `requirements.txt`，完成完整移除。
+- [x] Task7 更新 CI 安装入口为 `python -m pip install -e '.[dev]'`。
+- [x] Task7 更新 Docker 构建流程，移除 `requirements.txt` 依赖路径。
+- [x] Task7 更新 README 与 `docs/CI_CD_SPEC.md` 的安装与规范描述。
+- [x] Task8 清理缓存目录（`.pytest_cache`、`.mypy_cache`、`__pycache__`）。
+- [x] Task8 运行并通过 `black/isort/flake8/mypy/pytest`。
+- [x] Task9 完成提交并执行推送尝试，记录阻塞原因。
+- [x] 更新 `checklist.md` 并补充证据到 `docs/EVIDENCE_LOG.md`。
