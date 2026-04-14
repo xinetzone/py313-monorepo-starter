@@ -272,3 +272,23 @@ fatal: unable to access 'https://github.com/pre-commit/pre-commit-hooks/': Faile
 - 处置：
   - 本地已先完成 `black/isort/flake8/mypy/pytest` 全量通过；
   - 在受限网络场景下使用 `git commit --no-verify` 完成提交，并将阻塞与替代验证一并留痕。
+
+### E10: 推送阻塞（无远端）
+
+- 命令：
+
+```bash
+git push
+```
+
+- 原始错误（摘录）：
+
+```text
+fatal: No configured push destination.
+git remote add <name> <url>
+git push <name>
+```
+
+- 结论：
+  - 当前仓库未配置 `remote`，无法完成推送。
+  - 已满足“尝试推送并记录阻塞”要求；待提供远端后可执行 `git push <remote> <branch>`。
